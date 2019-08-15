@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EA6CA2A2304C318001453A6 /* XcodeStaticAnalyzerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6CA292304C318001453A6 /* XcodeStaticAnalyzerResult.swift */; };
 		OBJ_100 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Report.swift */; };
 		OBJ_101 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Settings.swift */; };
 		OBJ_103 /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Logger::Logger::Product" /* Logger.framework */; };
@@ -139,7 +138,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4EA6CA292304C318001453A6 /* XcodeStaticAnalyzerResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeStaticAnalyzerResult.swift; sourceTree = "<group>"; };
 		"DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzer::Product" /* DangerXcodeStaticAnalyzer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DangerXcodeStaticAnalyzer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Logger::Logger::Product" /* Logger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Logger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* ShellExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellExecutor.swift; sourceTree = "<group>"; };
@@ -396,7 +394,7 @@
 			path = OctoKit;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -408,7 +406,6 @@
 				OBJ_78 /* LICENSE */,
 				OBJ_79 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_60 /* RequestKit 2.3.0 */ = {
@@ -477,7 +474,6 @@
 				OBJ_10 /* ShellExecutor.swift */,
 				OBJ_11 /* XcodeStaticAnalyzerPlist.swift */,
 				OBJ_12 /* XcodeStaticAnalyzerViolation.swift */,
-				4EA6CA292304C318001453A6 /* XcodeStaticAnalyzerResult.swift */,
 			);
 			name = DangerXcodeStaticAnalyzer;
 			path = Sources/DangerXcodeStaticAnalyzer;
@@ -679,7 +675,7 @@
 				English,
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -814,7 +810,6 @@
 				OBJ_94 /* GitHubDSL.swift in Sources */,
 				OBJ_95 /* GitLabDSL.swift in Sources */,
 				OBJ_96 /* CurrentPathProvider.swift in Sources */,
-				4EA6CA2A2304C318001453A6 /* XcodeStaticAnalyzerResult.swift in Sources */,
 				OBJ_97 /* SwiftLint.swift in Sources */,
 				OBJ_98 /* SwiftLintViolation.swift in Sources */,
 				OBJ_99 /* SwiftlintReportDeleter.swift in Sources */,

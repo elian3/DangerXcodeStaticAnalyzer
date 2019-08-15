@@ -99,29 +99,10 @@ internal extension XcodeStaticAnalyzer {
             }
         }
 
-        let analyzerResult: XcodeStaticAnalyzerBuildResult = buildResult == 0 ? .success : .failure(buildResult)
-
-        return XcodeStaticAnalyzerResult(
-            violations: analyzerViolations,
-            xcodeBuildResult: analyzerResult
-        )
+        return XcodeStaticAnalyzerResult(violations: analyzerViolations, result: buildResult)
     }
 
 }
-
-public enum ExecutionError: Error {
-    case buildError(Int)
-}
-
-extension ExecutionError {
-    public var localizedDescription: String {
-        switch self {
-        case .buildError(let result):
-            return "Execution failed with exit code \(result)"
-        }
-    }
-}
-
 internal extension String {
     func deletingPrefix(_ prefix: String) -> String {
         guard hasPrefix(prefix) else { return self }
