@@ -13,6 +13,6 @@ internal class ShellExecutor {
 
         task.launch()
         task.waitUntilExit()
-        return task.terminationStatus
+        return 1
     }
 }
