@@ -13,9 +13,9 @@ public struct XcodeStaticAnalyzerResult {
     public let violations: [XcodeStaticAnalyzerViolation]
     public let xcodeBuildResult: XcodeStaticAnalyzerBuildResult
 
-    init(violations: [XcodeStaticAnalyzerViolation], result: UInt32) {
+    init(violations: [XcodeStaticAnalyzerViolation], result: Int32) {
         self.violations = violations
-        xcodeBuildResult = result == UInt32.zero ? .success : .error(XcodeStaticAnalyzerExecutionError.buildError(result))
+        xcodeBuildResult = result == Int32.zero ? .success : .error(XcodeStaticAnalyzerExecutionError.buildError(result))
     }
 }
 
@@ -49,7 +49,7 @@ public extension XcodeStaticAnalyzerBuildResult {
 }
 
 public enum XcodeStaticAnalyzerExecutionError: Error {
-    case buildError(UInt32)
+    case buildError(Int32)
 }
 
 extension XcodeStaticAnalyzerExecutionError {
